@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: #4ea1ff;
+    color: #fff;
+    padding: 10px 0 0 0;
+}
+
+#logo-pattern {
+    background-image: url(../img/pattern.png);
+    background-repeat: repeat-x;
+    background-size: 12%;
+    height: 3.5rem;
+}
+
+#logo-pattern img{
+    height: 100%;
+    padding-left: 10%;
+
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    margin: 0;
+}   
