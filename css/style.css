@@ -125,11 +125,35 @@ td {
 }
 
 .article-data td:last-of-type {
-  text-align: center;
+  text-align: justify;
 }
 
 .article-data tbody > tr:nth-of-type(even) {
   background-color: #b1e6f2;
+}
+
+aside.related-articles {
+    width: 25%;
+}
+
+aside.related-articles img{
+    width: 100%;
+}
+
+aside.related-articles h2{
+    color: #7e7e7e;
+    font-size: 1em;
+}
+aside.related-articles ul {
+    list-style: none;
+    padding: 0;
+}
+
+article.article-related h3{
+    position: absolute;
+    color: #fff;
+    padding: 0 0 0 10px;
+    margin-block-start: 0.5em;
 }
 
 footer {
