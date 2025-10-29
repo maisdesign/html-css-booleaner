@@ -128,7 +128,7 @@ td {
   text-align: justify;
 }
 
-.article-data tbody > tr:nth-of-type(even) {
+.article-data tbody > tr:nth-of-type(odd) {
   background-color: #b1e6f2;
 }
 
