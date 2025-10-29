@@ -7,16 +7,88 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <header class="brand-color">
         <div class="logo" id="logo-pattern">
-            <img src="img/logo.svg" alt="Logo">
+            <a href="#" title="home"><img src="img/logo.svg" alt="Logo"></a>
         </div>
     </header>
-    <main>
-        <section>
-            <h2>About</h2>
-            <p>This is a simple HTML and CSS project.</p>
+    <main id="main-content">
+        <article>
+            <header>
+                <h1 class="article-title">Internet deve essere al servizio del "bene pubblico": il manifesto di Tim Berners-Lee</h1>
+                <address class="author">Scritto da <a href="https://www.boolean.careers/blog" class="author">The Booleaner</a></address>
+                <time datetime="2020-10-10" class="date">il 10/10/2020</time>
+            </header>
+        <figure>
+            <img src="img/tim-1.jpg" alt="Tim Berners-Lee Speech">
+            <img src="img/tim-2.jpg" alt="Tim Berners-Lee Portrait">
+            <figcaption>
+                <p>1st Photo: John S. and James L. Knight Foundation, by Scott Henrichsen</p>
+                <p>2nd Photo: Wikimedia, by Paul Clarke</p>
+            </figcaption>
+        </figure>
+        <!-- L'idea è di dividere in sezioni questa parte perché, dal mio punto vista il corpo dell'articolo funzionerebbe anche fuori contesto -->
+        <section class="article-content">
+            <!-- start slipsum code -->
+            <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing. </p>
+            <!-- end slipsum code -->
+             <ul>
+                <li>
+                    <!-- start slipsum code -->
+                    You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder.
+                    <!-- end slipsum code -->
+                </li>
+                <li>
+                    <!-- start slipsum code -->
+                    Look, just because I don't be givin' no man a foot massage don't make it right for Marsellus to throw Antwone into a glass motherfuckin' house, fuckin' up the way the nigger talks.
+                    <!-- end slipsum code -->
+                </li>
+                <li>
+                    <!-- start slipsum code -->
+                    Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I'm in a transitional period so I don't wanna kill you, I wanna help you.
+                    <!-- end slipsum code -->
+                </li>
+             </ul>
         </section>
+        <!-- Allo stesso modo la tabella con i dati e conseguentemente un riassunto degli stessi potrebbe funzionare come elemento a se stante, da qui una nuova sezione -->
+        <section class="article-data">
+            <table>
+                <colgroup>
+                    <col class="col-25">
+                    <col class="col-25">
+                    <col class="col-50">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">Lorem ipsum dolor</th>
+                        <th scope="col">Lorem ipsum dolor</th>
+                        <th scope="col">Lorem ipsum dolor</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">Lorem ipsum dolor</th>
+                        <td>Lorem ipsum dolor</td>
+                        <td>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Lorem ipsum dolor</th>
+                        <td>Lorem ipsum dolor</td>
+                        <td>After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Lorem ipsum dolor</th>
+                        <td>Lorem ipsum dolor</td>
+                        <td>Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </article>
+        <aside>
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:info@boolean.careers">info@boolean.careers</a></p>
+        </aside>
     </main>
     <footer>
         <p>&copy; 2023 HTML CSS Booleaner</p>

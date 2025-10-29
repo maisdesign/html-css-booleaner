@@ -1,3 +1,12 @@
+a {
+    color:#4ea1ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -6,11 +15,14 @@ body {
 }
 
 header {
-    background: #4ea1ff;
-    color: #fff;
+    
+    color: #000;
     padding: 10px 0 0 0;
 }
 
+.brand-color{
+    background: #4ea1ff;
+}
 #logo-pattern {
     background-image: url(../img/pattern.png);
     background-repeat: repeat-x;
@@ -24,8 +36,100 @@ header {
 
 }
 
+.article-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
 main {
     padding: 20px;
+}
+
+#main-content {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.author{
+    line-height: 0;
+    color: #888;
+    font-size: 0.9em;
+}
+.author a {
+    color:#4ea1ff;
+    text-decoration: none;
+}
+
+.author a:hover {
+    text-decoration: underline;
+}
+
+.date{
+    color: #888;
+    font-size: 0.8em;
+    margin-bottom: 20px;
+
+}
+
+article {
+    margin-bottom: 40px;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    font-size: 0.7em;
+    color: #000;
+    text-align: left;
+    margin-top: 5px;
+    line-height: 0;
+}
+
+.article-content {
+
+}
+
+.article-data {
+
+}
+
+.col-25 {
+  width: 25%;
+}
+
+.col-50 {
+  width: 50%;
+}
+
+.article-data table {
+  border-collapse: collapse;
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.article-data thead {
+  background-color: #1eabe4;
+  color: #fff;
+  //**text-align: left;**/
+}
+
+.article-data th,
+td {
+  padding: 8px 10px;
+}
+
+.article-data td:last-of-type {
+  text-align: center;
+}
+
+.article-data tbody > tr:nth-of-type(even) {
+  background-color: #b1e6f2;
 }
 
 footer {
