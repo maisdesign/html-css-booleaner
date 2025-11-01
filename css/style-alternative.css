@@ -1,3 +1,13 @@
+/*
+*
+* L'idea di base per questa versione alternativa del css è mantenere la brand identity del colore dominante, cambiando leggermente la struttura della pagina
+* la barra laterale con i consigliati è più da sito di gossip che da testata vera e propria, me ne rendo conto
+* il blockquote è stato aggiunto per evidenziare meglio le citazioni, fingendo che quella parte della pagina fosse una citazione diretta dell'intervistato
+* una leggera shadow sulle immagini al passaggio del mouse serve ad aiutare l'interattività
+* Per il resto, si tratta di un restyling minimale con un tocco anni 2000 dato dal box-shadow sugli elementi .article-meta e dalle tabelle con righe alternate
+*
+*/
+
 a {
     color:#4ea1ff;
     text-decoration: none;
@@ -12,6 +22,11 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+}
+
+img:hover{
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+    opacity: 75%;
 }
 
 header {
@@ -47,7 +62,7 @@ header {
 }
 
 .article-meta{
-    margin: 0 0 20px 0;
+     margin: 0 0 20px 0;
     padding: 0.5em 1em;
     font-size: 0.9em;
     color:#888;
@@ -62,6 +77,10 @@ header {
 
 main {
     padding: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: flex-start;
 }
 
 #main-content {
@@ -101,6 +120,18 @@ figure {
     margin: 0;
     padding: 0;
 }
+#main-content figure img {
+    width: 46%;
+    height: auto;
+    display: inline;
+    border-radius: 4px;
+    border: 2px solid #4ea1ff;
+    margin: 1%;
+}
+
+#main-content figure img:hover {
+    
+}
 
 figcaption {
     font-size: 0.7em;
@@ -108,6 +139,11 @@ figcaption {
     text-align: left;
     margin-top: 5px;
     line-height: 0;
+}
+
+.article-main{
+    flex: 2;
+    
 }
 
 .article-content {
@@ -138,7 +174,6 @@ margin: 0 0 40px 0;
 .article-data thead {
   background-color: #1eabe4;
   color: #fff;
-  //**text-align: left;**/
 }
 
 .article-data th,
@@ -154,8 +189,16 @@ td {
   background-color: #b1e6f2;
 }
 
+.article-data tbody > tr:nth-of-type(even) {
+  background-color: #1eabe4;
+    color: #fff;
+}
+
 aside.related-articles {
-    width: 25%;
+    flex:1;
+    position: sticky;
+    top: 20px;
+    align-self: flex-start;
 }
 
 aside.related-articles img{
@@ -176,6 +219,16 @@ article.article-related h3{
     color: #fff;
     padding: 0 0 0 10px;
     margin-block-start: 0.5em;
+    z-index: 100;
+}
+
+blockquote {
+    border-left: 4px solid #4ea1ff;
+    margin: 20px 0;
+    padding-left: 15px;
+    color: #555;
+    font-style: italic;
+    background-color: #f9f9f9;
 }
 
 footer {
